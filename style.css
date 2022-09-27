@@ -1,0 +1,89 @@
+
+#nav{
+    background-color: maroon;
+    width:auto;
+    height: 90px;
+    text-align: center;
+    margin: 0;
+    padding-top: 1.5cm;
+    word-spacing: 1.5cm;
+    /*add flexbox style*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.one{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+.button{
+    background-color: red;
+    border-radius: 3cm;
+    border-color: red;
+    border-width: 0.3cm;
+    word-spacing: 0.2cm;
+    
+}
+.svg{
+    height: 50px;
+}
+#table{
+    height: 60px;
+   background-image: linear-gradient( to bottom left, orangered 50%, #222222 50%);
+}
+.path{
+    height: 300px;
+    background-color: #222222;
+    color: white;
+}
+.container-fluid{
+text-align: center;
+}
+.pathone{
+    height: 200px;
+}
+.progress{
+    height: 600px;
+    background-color: #383838;
+    color: white;
+}
+.bar{
+    height: 200px;
+    aspect-ratio: 1;
+    border-radius: 60%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(grey 100%, skyblue 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+.bar::after{
+    content: "0%";
+    font-size: 2rem;
+    color: white;
+}
+.go{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    --gap: 2cm;
+    align-items: center;
+    justify-content: center;
+}
